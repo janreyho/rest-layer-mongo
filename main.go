@@ -1,4 +1,4 @@
-package mongo_test
+package main
 
 import (
 	"log"
@@ -67,7 +67,7 @@ var (
 	}
 )
 
-func Example() {
+func main() {
 	session, err := mgo.Dial("")
 	if err != nil {
 		log.Fatalf("Can't connect to MongoDB: %s", err)
